@@ -1,0 +1,120 @@
+/* assets/css/style.css */
+
+/* Stili generali */
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Tabelle */
+.table-standings th,
+.table-standings td {
+    vertical-align: middle;
+}
+
+.table-standings .team-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+
+.table-matches .match-date {
+    white-space: nowrap;
+}
+
+.table-matches .match-teams {
+    font-weight: 500;
+}
+
+.table-matches .match-score {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Card campionati */
+.card-championship {
+    transition: transform 0.2s;
+}
+
+.card-championship:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge probabilità vittoria */
+.badge-probability {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+}
+
+/* Badges risultati parziali UISP */
+.badge-period-win {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-period-draw {
+    background-color: #ffc107;
+    color: black;
+}
+
+.badge-period-loss {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Elementi del dashboard */
+.stat-card {
+    border-radius: 0.5rem;
+    border-left: 5px solid;
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card-primary {
+    border-left-color: #4e73df;
+}
+
+.stat-card-success {
+    border-left-color: #1cc88a;
+}
+
+.stat-card-info {
+    border-left-color: #36b9cc;
+}
+
+.stat-card-warning {
+    border-left-color: #f6c23e;
+}
+
+/* Form */
+.required:after {
+    content: " *";
+    color: red;
+}
+
+/* Responsive admin layout */
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+    }
+    
+    .admin-sidebar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .admin-content {
+        width: 100%;
+    }
+}
